@@ -1,0 +1,83 @@
+Cloud Computing:
+================
+=>It is a process of delivering computing services(servers, databases, storage) over the internet is known as CC.
+
+Cloud:
+------
+=>It is a process of accessing the data or application via internet at anytime and anywhere.
+ex: Instagram, fb etc.
+
+Vendors of cloud:
+-----------------
+1.AWS
+2.AZURE
+3.GCP
+4.SALESFORCE
+5.IBM etc.
+
+TYPES of CC:
+------------
+1.Service Model:
+  a.IAAS b.PAAS c.SAAS 
+
+2.Deployment Model:
+  a.Private b.Public c.Hybrid d.Community cloud
+
+1.Service Model:
+                       On-Premises                 IAAS                    PAAS                   SAAS
+--------------------------------------------------------------------------------------------------------
+Application              All                        FIRST                   FIRST                 ALL
+Data                   Things                         5                       2                 Managed  
+Runtime                Managed                     Managed                 Managed                 By
+Middleware               By                          By                    By You                Vendor
+Os                      You                         You                 
+Virtualization
+Servers                                          Nxt 4 Managed              Nxt All
+Storage                                             By Vendor           Managed By Vendor
+Networking
+                                              Ex:Aws,Gcp etc          Ex: Godaddy               Ex:Gmail
+
+2.Deployment Model:
+
+public cloud                        private                     hybrid            community 
+--------------------------------------------------------------------------------------------------------------
+Everyone can access            only Few people                   Both              Multiple
+cost low                        cost high                       Public           Organisations
+security low                   security high                      +              use same cloud
+pc managed by third parties    used by organizations         Private cloud      to store their data  
+
+
+
+AWS:(Amazon Web services)
+==========================
+=>It is the best cloud provider.
+->It is the first among all the clouds.
+->It offers multiple services on different domains.
+->It is the combination of Saas,Paas,Iaas.
+
+why Aws so popular:
+-------------------
+->Aws provides wide range of cloud computing services that can be used to build and run applications.
+->It offers 200+ services on multiple domains.
+->aws covers about 31 geographic regions around the world.
+->the aws cloud spans 99 availability zones.  
+->It Follows Pay As You Go, Model.
+ 
+Data Center       :   Group Of Physical Servers.
+Availability zone :   It is nothing but datacenter.
+Region            :   Consists of 2 or more AZ's.
+Edge Location     :   end point.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
