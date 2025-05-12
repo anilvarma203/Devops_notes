@@ -35,7 +35,6 @@ Virtualization
 Servers                                          Nxt 4 Managed              Nxt All
 Storage                                             By Vendor           Managed By Vendor
 Networking
-<<<<<<< HEAD
                                                 Ex:Aws,Gcp etc            Ex: Godaddy            Ex:Gmail
 
 
