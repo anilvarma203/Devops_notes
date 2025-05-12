@@ -35,13 +35,13 @@ Virtualization
 Servers                                          Nxt 4 Managed              Nxt All
 Storage                                             By Vendor           Managed By Vendor
 Networking
+<<<<<<< HEAD
                                                 Ex:Aws,Gcp etc            Ex: Godaddy            Ex:Gmail
 
 
 Virtualization: creating a virtual version of something-like a server,storage,network-using software.
-(or)            running multiple virtual machines on a single physical machine, each with its own os and resources, isolated from others.
-                                 eg.,using VMware
-
+(or)          : running multiple virtual machines on a single physical machine, each with its own os and resources, isolated from others.
+                eg: using VMware
 
 
 2.Deployment Model:
@@ -73,7 +73,7 @@ why Aws so popular:
 Data Center       :   is the actual physical servers are housed.
 Availability zone :   is a phisically isolated DC within a region. It is nothing but datacenter.
 Region            :   is a geographical area, that contains 2 or more AZ's.
-Edge Location     :   used to cache content closer to user. and used for low latency delivery of web content,videos etc.
+Edge Location     :   used to cache zcontent closer to user. and used for low latency delivery of web content,videos etc.
 cache             :   is the temporary storage of data to improve speed and performance.
 
 
