@@ -77,6 +77,61 @@ cache             :   is the temporary storage of data to improve speed and perf
 
 
 
+services:
+=========
+1.EC2:(Elastic compute cloud) 
+------
+=>EC2 is a service in the aws cloud which is used to lanuch/create virtual servers on the cloud. It provides on demand,scalable computing capacity in the aws.
+->These servers are used for various purposes like hosting websites,running applications,storing and managing data.
+
+SERVER: is a computer or machine which accepts and process the requests provided by another computer and provides response.
+types of servers:
+a.web server b.application  c.database etc..
+
+->To lanuch EC2 instance there will be some steps,
+i.Add tags:
+  -you can give name to our instance.
+
+ii.choose an AMI(Amazon Machine Image):
+   -An AMI is a template that contains the software configuration(os,applicaton server,applicatios) required to launch instance.
+   -It consists of an AMI-ID which is region specific.
+
+iii.choose an Instance type:  
+    -IT means server configuration, we are providing cpu & memoryto our instance.
+     ex: t2.micro, t3.micro
+
+iv.configure your instance and network part:
+   -here you need to configure all ur instance details like no.of instances,subnets(AZ),vpc etc.
+
+v.configure security group:
+   -A SG is a set of firewall rules, used to control access to the server whom you want to allow or not
+   -these are region specific.
+   -the port range is 0 to 65535
+   -It deals with inbount and outbound traffic.
+   -SG are free you can create as many u want.
+
+vi.Add storage:
+   -To store data in the server we use ebs volumes.
+   -free tier upto 30gb
+
+vii.Review and launch:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
