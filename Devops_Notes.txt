@@ -72,7 +72,7 @@ why Aws so popular:
 Data Center       :   is the actual physical servers are housed.
 Availability zone :   is a phisically isolated DC within a region. It is nothing but datacenter.
 Region            :   is a geographical area, that contains 2 or more AZ's.
-Edge Location     :   used to cache zcontent closer to user. and used for low latency delivery of web content,videos etc.
+Edge Location     :   used to cache content closer to user. and used for low latency delivery of web content,videos etc.
 cache             :   is the temporary storage of data to improve speed and performance.
 
 
@@ -104,10 +104,10 @@ iv.configure your instance and network part:
    -here you need to configure all ur instance details like no.of instances,subnets(AZ),vpc etc.
 
 v.configure security group:
-   -A SG is a set of firewall rules, used to control access to the server whom you want to allow or not
+   -A SG is a set of firewalls used to control inbound and outbound traffic for your AWS resources.whom you want to allow or not
    -these are region specific.
    -the port range is 0 to 65535
-   -It deals with inbount and outbound traffic.
+   -It deals with inbound and outbound traffic. 
    -SG are free you can create as many u want.
 
 vi.Add storage:
@@ -116,9 +116,27 @@ vi.Add storage:
 
 vii.Review and launch:
 
+Day-3:
 
+EC2 Analysis:
+----------------------
+=>whenever we launch an instance in the aws it will give 2 ip address:
+1.public ip: To Access the application through interent(which are running in the server)
+            -It is also used to connect the instance.
+            -when you start and stop instance the public ip will change.
+2.private ip: To Access the application within the server.
+             -ip will nit change 
 
+=>whenver we create SG for instance we should give SSH protocal with the port number 22, to connect to the linux server(machine).
+->you can also change SG after the instance creation, select the instance > click Actions >security >change sg >add sg you want >save
+->You can use the same Security Group (SG) for multiple AWS EC2 instances.
+                                                                                                              
+=>whenvere we create a instance a volume is created with mentioned size, after creation we can modify the size of the volume once, afrer once if u want to modify again u should wait 6hrs to modify. instead of modify again and again we can create volume and we can attach it to the instance , but the volume should be created in the same availabilty zone of instance.
+->You can attach and detach an Amazon EBS volume while an EC2 instance is running.
 
+=>we can also change instance type, To modify the instance type, you must stop the instance first,  after >click on actions >instance settings >change instance type >select type >apply
+
+=>and also we can change name tags for our instance.
 
 
 
