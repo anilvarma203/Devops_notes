@@ -1,0 +1,2858 @@
+
+===============
+Day-01 : Linux
+===============
+
+1) Pre-Requisites
+
+2) Course Content
+
+3) Who can learn this course
+
+4) What is the benefit you are goning to get from this course
+
+5) Realtime usecases of Linux OS
+
+6) Course Info
+
+================
+pre-requisites
+================
+
+1) Laptop/Desktop => 8 GB RAM
+2) AWS Cloud Account (Free Tier)
+
+===============================
+Who should learn this course ?
+================================
+
+1) Freshers
+2) Working Professional (java, net, python, tester, devops, aws)
+3) Non IT people
+
+======================================
+Where we will use Linux in Realtime ?
+======================================
+
+To setup Tomcat server
+
+To setup jenkins
+
+To setup docker
+
+To setup k8s
+
+To setup sonar
+
+To setup nexus
+
+To setup ELK
+
+To store logs
+
+==========================================
+What we will learn as part of this course
+==========================================
+
+Name : Linux + Shell Scripting
+
+Duration : 2 Weeks
+
+Class Time : 6:30 PM to 8:00 PM (IST) ==> Mon-Sat
+
+Course Fee : Zero (Live Classes + Softcopy material)
+
+Backup Videos : 499 INR (1 year validity)
+
+
+==========================
+What is Operating System
+==========================
+
+=> It is a software which acts as mediator between users and computers
+
+=> Users will communicate with computers using Operating System (OS)
+
+=> Without OS we can't use any computer
+
+=> OS provides platform/environment to use computers
+
+	Ex: Notepad, Calculator, Browsers....etc
+
+=> We have several Operating Systems in market
+
+		Ex: Windows, Linux, MAC, Android, IOS.....
+
+=============
+Windows OS
+=============
+
+=> Developed by Microsoft
+
+=> It is GUI based OS (Graphical User Interface)
+
+=> It is commercial OS (paid)
+
+=> Security features are less (Anti-virus is required)
+
+=> Windows OS is recommended for personal use
+
+Ex: Play Games, Watch Movies, Internet Browsing, Store data, Online Classes...
+
+=> Single User based OS
+
+Note: Windows is not recommended for business usecases (servers, tools, application deployment..)	
+
+=======================
+Linux Operating System
+=======================
+
+=> Linux is a community based OS
+
+=> Linux is free & Open Source
+
+=> Linux Provides High Security
+
+=> Linux is Multi User based OS
+
+=> Linux is highly recommended for project operations
+
+=> Linux is CLI based OS (Command Line Interface)
+
+		touch
+		mv
+		rm
+		vi
+		mkdir
+		cat
+
+Note: In real-time we will use Linux machines to setup our infrastructure.
+	
+	Ex: jenkins, sonarqube, nexus, docker, k8s, ansible etc.....
+
+
+=================
+Linux OS History
+=================
+
+=> Developed by Linus Torvalds	
+
+=> Initially Linus Torvalds was using Unix OS and found some challenges in that and informed to that company but they did not accept his suggestions.
+
+=> Linus started doing research and he found "Minux OS" is similar to his ideas.
+
+=> He has taken Minux OS and made few changes to that and released into market as Linux OS.
+
+		(Lin)us   + Min(ux) = Linux
+
+
+================================
+Linux Distributions / Flavours
+================================
+
+=> Linus Tarvalds given Linux os as free and open source
+
+=> Many companies downloaded Linux OS code and modified according to their requirement and released into market with different names. 
+
+		Those are called as Linux Distributions/Flavours.
+
+Ex: Amazon Linux, Red Hat, Ubuntu, Cent OS, SuSe, Kali, Fedora.......	
+
+Note: We have 200+ linux distributions	
+
+
+==========
+Summary
+==========
+
+1) What is OS & Why we need it ?
+2) Windows OS
+3) Linux OS
+4) Linux OS History
+5) Linux Distributions
+
+=====================
+Linux Machine Setup
+=====================
+
+1) Login into AWS cloud account
+
+2) Create Linux Virtual Machine using AWS Ec2 service
+
+3) Connect with Linux VM using Git Bash/ MobaXterm / Putty
+
+
+🔥 Thankyou all for being part of *Ashok IT - Family*
+
+✅ Please go thru below videos and get ready with setup before coming to tomorrow's class.
+
+👉 Linux Free Material Access: https://youtu.be/GySi7CuOZdk?si=2eIfmSRY5_WUAwHl
+
+👉 AWS account setup : https://www.youtube.com/watch?v=xi-JDeceLeI
+
+👉 Linux Machine with Git Bash : https://www.youtube.com/watch?v=JMlQaTXvw5o
+
+👉 Linux Machine with MobaXterm : https://youtu.be/uI2iDk8iTps?si=ZuZs0lQTxoRpbRMk
+
+👉 Linux Machine with putty : https://youtu.be/GXc_bxmP0AA?si=HgSydrP89mPxv23s
+
+
+💥 *Linux Backup Videos (499 INR ) : https://rzp.io/l/linux-os*
+
+-
+*Ashok IT*
+
+
+
+Index node: pointer to the data block of the file.
+==========
+
+===================
+Linux File System
+===================
+
+=> Everything is represented as a file only
+
+=> 3 Types of files
+
+		1) Ordinary file / Normal file (starts with -)
+
+		2) Directory file (folder) (starts with d)
+
+		3) Link File (starts with l)
+
+================
+Linux Commands	
+================
+
+whoami : To display logged in username
+
+date : displays current date
+
+cal : display calendar
+
+pwd : display present working directory path
+
+cd : change directory
+
+		$ cd <dirname>
+
+		$ cd ..
+
+
+
+Alias & unalias:
+================
+alias is nothing but alternate name.
+=>To list aliases use alias command.
+syn:
+    >alias name='command'
+ex:
+    >alias Time='date +%T'
+
+unalias means removing alias for command.
+    >unalias commandName
+ex:
+    >unaias Time
+
+
+mkdir : make directory (create)
+
+rmdir : delete empty directory
+
+ls:
+===
+ls           : Lists files and directories in the current directory.
+
+ls -l        : Long listing with alphabetical order (ascending)
+
+ls -lr       : reverse of alphabetical order (descending)
+
+ls -lt       : Display latest files on top
+
+ls -ltr      : old files on top
+
+ls -a        : list all files and directories in the current directory, including hidden files.
+ls -la       : display hidden files (starts with .)
+ls -lh       : Sizes are displayed in a human-readable format (e.g., 4.0K).
+ls -s        : This option displays the size of each file in blocks. The size is shown in the first column.
+ls -S        : is used to list files and directories in the current directory, sorted by file size in descending order (largest files first).
+ls -R        : list all files and directories in the current directory and all its subdirectories recursively.
+ls -i        : to display the inode number of each file and directory.
+
+ls -d */     : This lists only directories in the current directory.
+find . -maxdepth 1 -type f ! -name ".*" : to list the files in current directory.
+ls -p | grep -v /  :  to list only the files in the current directory, excluding directories.
+
+
+touch:
+======
+touch : to create empty files
+
+		$ touch f1.txt f2.txt
+
+
+rm:
+===
+rm : to delete files/non-empty directories
+
+		$ rm <file-name>
+
+		$ rm *.txt
+
+		$ rm a*.txt
+
+		$ rm -rf <dir-name>
+
+mv:
+===
+mv : rename & move from one location to another location
+
+		$ mv  <present-name> <new-name>
+
+		$ mv  <present-location>  <new-location>
+
+
+cat:
+=====
+cat : create file with data + append data to file + print file data		
+
+		$ cat > f1.txt 
+
+		$ cat >> f1.txt
+
+		$ cat f1.txt
+
+		$ cat -n f1.txt
+
+		$ cat f1.txt f2.txt > f3.txt
+
+echo:
+=====
+->echo command in Unix/Linux is used to display a line of text on terminal.
+-n   : prevents the trailing newline.
+-e   : enables interpretation of backslash escapes.
+       ex: echo -e "Hello,\nWorld!"
+       op: Hello,
+           World!
+
+=>To remove the content of the file but not the file:
+  --------------------------------------------------	
+1st way:
+   >echo -n "" >filename
+
+2nd way:
+    >cat /dev/null > filename
+
+
+view the contents of file:
+===========================
+cat
+tac
+rev
+head
+tail
+more
+less
+
+->cat,tac,rev will display total content at a time.
+->if it is huge content then we have to navigate head,tail,more,less
+
+
+tac : To print file content from bottom to top
+
+    $ tac f1.txt
+
+rev : To reverse each line of data
+
+    $ rev f1.txt
+
+more & less:
+===========
+=>to view the content of the file page by page.
+=>less is more powerful than more.
+
+more: to view the content page by page in fw direction only.
+less:  to view the content page by page in bidirection.
+   press 'd' --> To go to next page
+   press 'b' --> To go to previous page
+
+
+
+cp:
+===
+cp : To copy one file data into another file
+
+1. Copying a file in the same location
+    $ cp f1.txt  f2.txt
+
+2. Copying a file in a different location.
+   $ cp file1 /tmp
+
+3. Copying a file in a different location with filename.
+   $ cp file1 /tpm/f1.backup
+
+4. Copying multiple files into directroy.
+   $ cp file1 file2 file3 files.dir
+ 
+->ensure that the target directory should be present before copying the files. Let us first create ‘files.backup’ directory and then copy the files.
+	
+Note: To copy more than one file data into another file we will use cat command
+    $ cat f1.txt f2.txt > f3.txt 
+
+
+1. Copying a directory - Scenario1
+  $ cp -r linux /tmp
+
+2. coping a dirctory into different directory with new dir
+ $  cp -r linux /tmp/linux.backup
+
+
+wc:
+===
+wc : word count command
+
+      $ wc f1.txt  (no.of lines, no.of words, no.of chars)    
+
+cmp : Compare file
+
+	  $ cmp f1.txt f2.txt    
+
+
+
+tar:
+===
+=>Archiving:  is the process of storing digital information for long-term safekeeping, typically when you don't need immediate access to it but might need it later.
+=>tar command: The primary tool for archiving is the “tar” command. It stands for "tape archive"
+=>“tar” command saves many files together into a single archive and can restore individual files from the archive.
+
+Syntax: 
+   >tar [OPTION]… destination source
+
+=>where, OPTION refers to the options that can be used along with the command, destination is the archive and source is file or directory to be archived.
+Note: Destination must have ‘.tar’ extension.
+
+options:
+--------
+-cvf  --> create archive from files
+-cvzf --> create a compressed gzip archive files
+-tvf  --> list all the files in archive.tar verbosely
+-xvf   --> extract all files archive.tar
+-rvf  --> append a file to  the existing archive
+
+-c: Create a new archive.
+-v: Verbose mode, which displays the progress in the terminal.
+-f: Specifies the filename of the archive.
+
+>tar -cvf files_archive.tar file1 file2 
+>tar -cvzf files_archive2.tar file3 file4
+>tar -tvf files_archive.tar                  -->To list the content of the archive without extracting.
+>tar -tvzf files_archive2.tar                -->To list the content of the zipped archive without extracting.
+>tar -xvf files_archive.tar                  -->To extract the files out of the archive.
+>tar -rvf files_archive.tar file5            -->To add files to the existing archive.
+	
+
+Soft Link and Hard Link:
+==========================
+=>A link file is a pointer to  the original file. 
+->soft link: points to the original file not its location in the filesystem. Symbolic links (or softlinks) are more like shortcuts.
+  --------
+Syntax:
+    >ln -s <original file> <link file>
+->inode number is differnet from original file.
+->The number of links to a file does not change with the creation of a soft link since both are two different files.
+->if orifginal file is deleted soft link will invalid.
+
+->hard link: is just another filename pointing to the actual content of the original file. 
+  ---------
+syn:
+   >ln <original file> <linkfile>
+->the number of links to the file increases. 
+->inode number is same as original file.
+->if orifginal file is deleted hard link will valid.
+
+
+
+Filtering Rows in a File:
+=========================
+head & tail:
+============
+head : To display file data from top (default 10 lines)
+
+	$ head f1.txt   (it will print firat 10 lines by default)
+
+	$ head -n 5 f1.txt   (print first 5 lines only)
+
+	$ head  -15 f1.txt   (print first 15 lines only)
+        
+        $ head -n -15 f1.txt   (it will display all the lines from the top except last 15 lines)
+        
+        head -c 15 f1.txt   (it will print only 15 characters from top of the file)
+
+
+tail : To display file data from bottom (default 10 lines)
+
+      $ tail f1.txt
+
+      $ tail -n 20 f1.txt  (print last 20 lines of file)
+
+      $ tail -n 100 f1.txt (print last 100 lines of file)
+      
+      $ tail -n +10 f1.txt (print the lines from 10 line of file)
+
+      $ tail -f f1.txt (to get live data)
+
+->To continuously monitor a log file, use the -f option:
+      >tail -f /var/log/syslog
+      >less +F /var/log/syslog
+
+
+=>Log files are typically stored in specific directories.
+System Logs: /var/log/
+Ex: /var/log/syslog, /var/log/messages
+
+Application Logs: Often stored in subdirectories within /var/log/
+Ex: /var/log/apache2/ for Apache web server logs
+
+wc:
+===
+->wc means word count.
+  >wc filename
+
+options:
+-l --> To print only no.of lines
+-w --> To print only no.of words
+-c --> To print only no.of charcters
+
+
+=>Filtering Columns in a File:
+==============================
+
+cut:  It prints only a section of each line in a file. 
+=====
+1.Display a single field
+   >cut -d ":" -f1 /etc/passwd
+
+->option ‘-d’ refers to the delimiter.
+->option ‘-f’ refers to fields or sections which need to be printed. 
+
+2.Display multiple fields
+   >cut -d ":" -f1,3,7 /etc/passwd
+
+3.Display range of columns.
+   >cut -d ":" -f 2-4 /etc/passwd
+   >cut -d ":" -f -4 /etc/passwd
+   >cut -d ":" -f 2- /etc/passwd
+
+4.Display specific charcter.
+   >cut -c 6 /etc/passwd
+
+5.Display range of charcters in every record.
+   >cut -c 1-9 /etc/passwd
+   >cut -c -5 /etc/passwd    --> it will diaplay 1st to 5th character 
+   >cut -c 5- /etc/passwd    --> it will diaplay 5th character to last char in every record
+   >cut -c 1-5,8-11 /etc/passwd    --> it will diaplay 1st to 5th character and 8th to 11
+
+6. Skip specific column.
+   >cut -d ":" --complement -f 3,5 /etc/passwd   --> it will display all columns except 3 and 5 
+
+
+sort:
+=====
+sort: To sort the content of the file.
+  syn: sort filename
+1. Sorting text data:
+    >sort users
+->by default sorting based on alphabetical order.
+
+2. Sorting numerical data:
+   >sort -n numbers
+->If file contains alpha numeric data then, first numbers will be sorted and then alphabets.
+->If file contains numbers , sorting is always based on digits but not on numeric value.
+
+options:
+-r --> To sort the revere alphabetical order and sort numerical data in the descending order.
+-n --> to sort in numeric value. 	
+     >sort -r -n numbers
+
+3. Sort a file based on a field:
+    >tail /etc/passwd | sort -nt ":" -k3 
+->option ‘-t’ specifies the field separator.
+->option ‘-k’ refers to key.
+->Using the “sort” command, a file can be sorted based on a specific field. 
+   
+
+UNIQ:
+=====
+=>The uniq command helps to detect any duplicate entity inside a text file to avoid redundancy.
+
+1.Printing the each line with Number of Times a Line is Repeated
+$ uniq -c mv.txt
+ex: 2 apple
+    1 banana
+    3 cherry
+
+2.Printing the Repeated Lines for One Time 
+$ uniq -d mv.txt
+
+3.Printing All the Duplicate Lines 
+$ uniq -D mv.txt
+
+4.Printing Only the Unique Lines that are not repeated.
+$ uniq -u mv.txt
+
+5. Case-insensitive Comparison
+$ uniq -i mv2.txt
+
+
+grep:
+======
+grep : grep stands for global regular expression print
+
+=>grep is used to search for specific patterns within files.
+
+	  $ grep 'aws' f1.txt   (print lines having aws keyword)
+
+      $ grep -i 'AWS' f1.txt (ignore case sensitive)
+
+      $ grep -n 'aws' f1.txt (print lines having aws with line number)
+
+      $ grep -i -n 'linux' *  (search linux in all files of pwd)
+      
+      $ grep -i "^linux" f1.txt {printslines which starting with given pattern)
+    
+      $ grep -c "pattern" filename   (to count the number of matching lines)
+
+      $ grep -o "apple" example.txt | wc -l (This command will count each occurrence of "apple" and output the total number)clea
+
+      $ grep -w "linux" f1.txt (print the lines exact matching pattern)
+
+      $ grep -v "linux: f1.txt ( print all the lines except given pattern)
+
+      $ grep "^lin" f1.txt (print the lines which starting with given pattern)
+
+      $ grep "ux$" f1.txt (print the lines which ends with given pattern)
+
+      $ grep  -n "^$" f1.txt (Searches for empty lines in the file f1.txt and prints them along with their line numbers.)
+
+      $ grep "\<li" f1.txt (find words starting with text in file )
+
+      $ grep "x/>" f1.txt (find words ends with text in file )
+      $ grep -A2 'pattern' file (it dispaly pattern matches lines and 2 lines after the the matched lines
+      $ grep -B2 'pattern' file (it dispaly pattern matches lines and 2 lines Before the the matched lines
+      $grep -c2 'pattern' file (it dispaly pattern matches lines and 2 lines Before & 2 lines after the the matched lines
+
+grep -L 'example' *.txt
+
+grep command with -F option:
+----------------------------
+-F means Fixed Strings.
+if we want to search for a group of fixed strings then we should go for -F option.
+grep -F "java
+aws
+linux" f1.txt
+
+
+
+=>search multiple contents in a file.
+ -------------------------------------
+  >grep -e 'aws' -e 'java' f1.txt
+
+->instead of using -e option we can wse egrep command.
+->egrep means extended grep.
+   >egrep '(aws|java)' f1.txt
+
+
+CMP & Diff:
+===========
+cmp: will compare text from the files byte by byte.
+->cmp provides minimal output, showing only the first difference.
+->cmp is useful for binary files.
+syn:  cmp file1.txt file2.txt
+
+diff:  Compares two files line by line. 
+->diff provides a detailed list of all differences.
+->diff is more useful for text files.
+syn: diff file1 file2
+
+
+
+DU (Disk Usage):
+================
+->The du (disk usage) command in Linux is used to estimate and display the amount of disk space used by files and directories.
+       ->$ du   -- display the disk usage of the current directory and its subdirectories:
+       ->$ du -a -- To display disk usage of files and directories in the output.
+       ->$ du -h /home  -- to check the disk usage of the /home directory in a human-readable format.
+       ->$ du -s /home  -- he du -s command in Linux is used to display the total disk usage of a specified directory or file. The -s option stands for "summarize,
+       ->$ du -sh /home --The -s option summarizes the total disk usage of the specified directory, and the -h option makes the output human-readable.
+       ->du -ha --time  --displays the last modification time of each of the directories and files, along with their space consumption.
+
+DF(Disk Free):
+==============
+->The df (disk free) command in Linux is used to display the amount of disk space available on file systems.
+-> It's a handy tool for monitoring disk usage and ensuring you have enough space for your files and applications.
+     ->$ df    -- To see the disk space usage of all mounted file systems, 	 	
+     ->$ df -h  -- To display sizes in a more readable format (e.g., KB, MB, GB), 
+     ->df -a or --all: Includes dummy file systems.
+     ->df -T or --print-type: Shows the file system type.
+     ->df -i or --inodes: Displays inode information instead of block usage.
+     ->df -t or --type=TYPE: Limits listing to file systems of the specified type.  df -t tmpfs
+     ->df -x or --exclude-type=TYPE: Excludes file systems of the specified type.
+     ->df -k,m --display informaation in kilo bytes, mega bytes.
+
+
+PS(Process Status):
+==================
+->The ps (process status) command in Linux is used to display information about active processes,which includes both running and sleeping processes on the system.
+    ->$ ps  --  show the processes running in the current shell.
+    ->$ ps -e -- To list all processes running on the system,including those not started by the current user.
+    ->$ ps -f -- To display a full-format listing.
+    ->$ ps -a -- This option shows processes for all users that are associated to the terminal, not just the current user.
+    ->$ ps -u --  is used to display information about processes for a specific user.  $ps -u root
+    ->$ ps -x -- used to display information about processes that do not have a controlling terminal. This includes background processes and system daemons.
+    ->$ ps aux -- to get a detailed view of all processes.
+    ->$ps -ef  -- Full-format listing of all processes.
+    ->ps aux --sort=-%mem --sort the processes based on memory 
+    -> ps -eo pid,ni  -- sed to display the Process ID (PID) and the nice values (NI) of every process running on the system.
+          ps: The command to display information about active processes.
+          -e: Selects all processes.
+         -o pid,ni: Specifies the output format to include only the PID and the nice value.
+
+
+Comparison with Other Options:
+ps: Shows processes for the current user and terminal.
+ps a: Shows processes for all users with a terminal.
+ps -e: Shows all processes from all users, regardless of terminal.
+
+ 
+Top:
+=====
+=>used to display real-time information about system processes, including CPU and memory usage.
+options:
+     >top -d 5 --Set the delay between updates.
+     >top -p 1234 --Monitor a specific process by its PID.
+     >top -u user --Display processes for a specific user.
+     >M: Sort by memory usage.(enter M while process is running)
+     >P: Sort by CPU usage (default).
+
+Renice:
+=======
+=>is used to change the priority of a process.
+->the nice value ranges from -20 to 19, with -20 being the highest priority level and 19 being the lowest. The default value is 0.
+    >$ renice -20 –p 27422
+
+
+KILL:
+=====
+->‘kill’ is the command used to terminate a process.
+   $kill <pid>
+   $kill -9 pid       -- it will kill the process forcefully.
+   $kill -STOP PID    -- Stopping a Process
+   $kill -CONT 1234   --Resume the Process
+
+
+zombie process:
+================
+A zombie process is a process in a computer operating system that has completed execution but still has an entry in the process table. This happens because the process's parent hasn't read its exit status yet. Essentially, the process is "dead" but hasn't been fully cleaned up by the system.
+
+Here's a bit more detail:
+
+When a process finishes, it sends an exit status to its parent process.
+The parent process is supposed to read this status using a system call like wait().
+If the parent doesn't read the status, the process remains in the process table as a "zombie."
+Zombie processes don't consume system resources like CPU or memory, but they do occupy an entry in the process table, which can be problematic if many accumulate.
+
+   >ps aux | grep 'Z'
+
+
+uptime:
+=======
+=>provides information about how long the system has been running, along with the current time, the amount of time the system has been up, the number of users currently logged in.
+Example Output
+ 10:58:42 up 5 days,  3:42,  2 users,  load average: 0.15, 0.10, 0.0
+
+last reboot:
+============
+=>This command will display a list of all the reboots since the log file was created.
+Example Output
+reboot   system boot  5.4.0-104-generic Mon Mar 13 10:00   still running
+	
+->This output shows the date and time of the last system reboot.
+
+umask:
+=====
+=>that determines the set default permissions for newly created files and directories.
+
+stat:
+=====
+=>The stat command in Unix/Linux systems is used to display detailed information about files and file systems.
+ex: stat fileaname
+output:
+File size mtime atime ctime filetype 
+
+gzip:
+=====
+Purpose: gzip is a compression tool used to reduce the size of files.
+Function: It compresses individual files, creating a .gz file.
+Usage: Commonly used to compress single files. For example, gzip filename will compress filename to filename.gz.
+options:
+gzip -c filename > compressedfile.gz : Write output to standard output and keep original files unchanged.
+gzip -d filename.gz : Decompress a file.
+gzip -k filename    : Keep the original file after compression.
+gzip -l filename.gz : List the compressed file's contents.
+gzip -r directory/  : Recursively compress files in directories.
+gzip -9 filename    : Set the compression level (1 = fastest, 9 = best compression).
+
+tar:
+=====
+Purpose: tar is an archiving tool used to combine multiple files into a single archive file.
+Function: It creates a .tar file that contains multiple files and directories.
+Usage: Commonly used to bundle files together. For example, tar -cvf archive.tar directory/ will create an archive file archive.tar containing the contents of directory/.
+find /Desktop/Document/Application/ -type d -exec tar -cvzf {}.tar {} \;
+
+History:
+=========
+=>used to display the list of previously executed commands in the terminal.
+
+uname:
+=====
+=>used to display system information. By default, it shows the system's kernel name(os).
+
+hostname:
+==========
+=>is used to display or set the system's hostname. The hostname is the name assigned to a computer or device on a network.
+
+jobs -l:
+=========
+to list the jobs running in the background.
+
+fg:
+===
+to bring a background process to the foreground.
+
+=======================
+Text Editors in Linux
+=======================
+
+=> vi (visual editor) it is default editor in linux machines
+
+=> Using 'vi' we can create new files and we can modify existing file data
+
+		$ vi f1.txt
+
+=> vi command is having 3 modes
+
+	a) command mode (just to open the file)
+	
+	b) insert mode (to edit the file ) ---> press 'i' in keyboard
+
+	c) esc mode (to comeout from insert mode) --> press 'esc' in keyboard
+
+
+    ## Save changes & close the file =>  :wq
+    
+    ## Without saving changes close the file => :q!	
+
+
+Note: vi command will open the file if it is already avilable otherwise it will create new file and it will open that file.
+
+===================================
+file creation commands in linux
+===================================
+
+touch : to create empty file
+
+cat : create file with data
+
+cp : copy one file into another file (cp f1.txt f2.txt)
+
+vi : create and open file for editing (vi f3.txt)
+
+====================================
+Reading file data commands in linux
+====================================
+
+cat : print file data from top to bottom
+
+tac  : print file data from bottom to top
+
+rev : print each line in reverse order
+
+head : print first 10 lines of file data
+
+tail : print last 10 lines of file data
+
+vi : open the file 
+
+
+
+09501795017
+02900127578  -dishtv
+
+
+
+=============
+SED command
+=============
+
+=> SED stands for stream editor
+
+=> SED is used to process the data (substitute,delete,insert)
+
+=> Using SED command we can perform operations on the file without opening the file.
+
+=> SED is very powerful command in linux
+
+=> Create a file with below data to practice sed command
+
+java is a programming language
+java is free
+java is open source
+java is easy
+i want to learn java
+java is having good demand in market
+java is oop based. java is easy.
+
+1. Searching and Replacing:
+----------------------------
+# substitute first occurance of 'java' with 'python' in every line
+$ sed 's/java/python/' data.txt
+
+# substitute first occurance of 'java' with 'python' in every line and print line numbers
+$ sed 's/java/python/' data.txt  | nl
+
+# Replace second occurance of 'java' with 'python' in every line
+$ sed 's/java/python/2' data.txt
+
+# Replace third occurance of 'java' with 'python' in every line
+$ sed 's/java/python/3' data.txt
+
+# Replace all occurances of 'java' with 'python' in every line
+$ sed 's/java/python/gi' data.txt                                  -- case insensitive
+
+# Replace all occurrences of a word in a specific line 
+$ sed ‘1s/Bash/Shell/g’ file0.txt
+
+# Replace all occurrence of a word in a specific lines
+$ sed '1,3s/Bash/Shell/g' file0.txt
+
+#Replace multiple words.
+$ sed 's/java/python/g;s/is/are/g' ak1.txt
+(or)
+$ sed -e 's/java/python/g' -e 's/is/are/g' ak1.txt
+
+# Substitute and save changes in original file
+$ sed -i 's/java/python/g' data.txt
+
+#substitute "MR " at the start of each line with an empty string.
+$ sed 's/^MR //' filename
+$ sed 's/^MR //i' filename  -- case-insensitive
+
+2. Removing or Deleting a Line:
+---------------------------------
+#To delete a specific word from a file
+$ sed 's/<word>//g' file_name
+$ sed 's/java//;s/ //' ak
+
+# Delete a Specific Line of the File
+$ sed -i '4d' f1.txt
+
+# Delete last line of file
+$ sed -i '$d' f1.txt
+
+# Delete data from 3rd line to last line
+$ sed -i '3,$d' data.txt
+
+# Delete data from 5th line to 10th line
+$ sed -i '5,10d' data.txt 
+
+# delete all lines which contains 'python' keyword
+$ sed '/python/d' data.txt
+
+#delete all lines bw the mentioned.
+$ sed '/python is a/,/source/d' f1
+
+
+3. Displaying Lines from a File:
+-------------------------------
+# Display Only Specific Lines of the File:
+$ sed -n '3p;5p;7p' file.txt
+
+# print all lines which contains 'python' keyword
+$ sed -n '/python/p' data.txt
+
+# print data from 3rd line to 6th line
+$ sed -n '3,6p' data.txt
+
+4. Inserting and Appending Text:
+----------------------------------
+# Add the line after line 5 in the file0.txt file,
+$ sed '5a\Bash scripting is also popular among the programmer' file0.txt
+
+# insert data at 4th line
+$ sed '4i\i am from ashokit' data.txt
+
+# Add given text at end of the file
+$ sed '$a\i love linux' data.txt
+
+# add an empty line after each line in a file 
+$ sed G filename
+
+# delete empty lines from a file
+$ sed '/^$/d' filename
+
+# to keep backup original file.
+$ sed -i.bak 's/old-text/new-text/g' filename
+
+
+====================
+What is AWK Command
+=====================
+
+=> The awk command is a versatile text processing tool available Linux. 
+
+=> It allows you to manipulate and extract data from structured text files, usually in a columnar format. 
+
+=> awk takes input, processes it line by line, and performs actions based on specified patterns and rules.
+
+Sytax : awk 'pattern { action }' file
+
+$ cat > employees.txt 
+
+Ashok manager account 45000
+John clerk account 25000
+Smith manager sales 50000
+Charles manager account 47000
+Ganesh peon sales 15000
+Mahesh clerk sales 23000
+Ram peon sales 13000
+Cathy director purchase 80000 
+
+points:
+=======
+->NR is the variable to print line numbers at the output.
+->$0 in a print statement, it prints the whole line as it appears in the file.
+->$NF(no.of field) refers to the last field of the line.
+
+# Print entire file data 
+$ awk '{print}' employees.txt        -- relies on the default behavior of awk.
+$ awk '{print $0}' employees.txt     -- explicitly specifies to print the entire lines of file.
+
+# print file data with line numbers
+$ awk '{print NR,$0}' employees.txt 
+
+# print first & fourth columns data along with line numbers.
+$ awk '{print NR,$1,$4}' employees.txt 
+
+# print first & last columns data
+$ awk '{print $1,$NF}' employees.txt   --nf will give the last column 
+
+# print the fisrt line
+$ awk -F 'NR==1 {print $0}' filename   -F field separator
+
+# print the fisrt line
+$ awk -F 'NR==1 {print}' filename 
+
+# print the multiple lines.
+$ awk -F 'NR==1,NR==3 {print}' filename 
+
+
+# print the count of lines in a file.
+$ awk -F 'END {print NR}' filename  
+
+
+# print only manager role data rows 
+$ awk '/manager/ {print}' employees.txt      -- it will print all manager rows 
+$  awk '/manager/ {print $1}' employees.txt  --it will print manager rows with first column
+
+# print multiple roles data rows 
+$ awk '/manager|sales/ {print}' employees.txt      -- it will print all manager and sales rows 
+
+# Ignore case while searching
+$ awk 'BEGIN{IGNORECASE=1} /Manager/ {print}' employees.txt 
+
+#To check a given char is present in column
+$ awk '$2 ~ /e/' employees.txt 
+
+# print first column data along with line number by appending @
+$ awk '{print NR "@" $1 }' employees.txt
+
+#printing range of lines.
+$ awk -F ',' 'NR==2,NR==4 {print}' filename
+
+#printing specific lines.
+$ awk -F ',' 'NR==2;NR==4 {print}' filename
+
+#printing range of lines with specific column with line numbers.
+$ awk -F ',' 'NR==2,NR==4 {print NR,$1}' filename
+
+#Display from the 2nd Line Onwards
+$ awk 'NR >= 2' filename
+
+#print data of employees whose salary between 20000 and 50000
+$ awk '$NF>20000 && $NF<=50000' employees.txt 
+
+Functions:
+----------
+# replace a word with another.
+$ awk '{if ($2=="manager"){$4=80000} print $0}' awk.txt
+
+#To replace a word
+$ awk '{gsub("manager","attender"); print $0}' employees.txt 
+
+#print length of line/field
+$ awk '{print length($2)}' employees.txt 
+
+#print values in upper or lower letter
+$ awk '{print tolower($3)}' employees.txt 
+$ awk '{print toupper($3)}' employees.txt 
+
+===========================
+Users & Groups Management
+===========================
+
+=> Linux is a multi user based OS
+
+=> Within one linux machine we can create multiple user accounts
+
+=> Multiple users can acces single linux machine at a time and can perform multi tasking
+
+Note: "ec2-user" is default user in amazon linux vm.
+
+# Create new user 
+$ sudo useradd <username>
+
+# set password for user
+$ sudo passwd <username>
+
+# display all users created
+$ cat /etc/passwd
+
+# swith user
+$ sudo su <username>
+
+# Go to logged in user home directory
+$ cd ~
+
+# Delete User
+$ sudo userdel <username>
+
+# Delete user along with user home directory
+$ sudo userdel <username> --remove
+
+# how to change username
+$ sudo usermod -l <new-name> <old-name>
+
+
+
+
+===========================
+Working with User Groups
+===========================
+
+=> When we create user in linux, for every user one user group also will be created with the given username.
+
+# Display all groups in linux
+$ cat /etc/group
+
+# create group
+$ sudo groupadd <group-name>
+
+# Add user to group
+$ sudo usermod -aG <group-name> <username>
+
+# Remove user from group
+$ sudo gpasswd -d <username> <group-name>
+
+# Display users belongs to a group
+$ sudo lid -g <group-name>
+
+# Display one user belongs to which grops
+$ id <username>
+
+# Delete Group
+$ sudo groupdel <group-name>
+
+# Changing groupname
+$ sudo groupmod -n <new-name> <old-name>
+
+=================================
+What is sudoers file in Linux
+=================================
+
+=> It is very important configuration file in linux machine.
+
+=> Using this file we can control which user can run command as a superuser.
+
+# print sudoers file content
+$ sudo cat /etc/sudoers
+
+Note: We should be very careful while working with sudoers file. If we do any mistakes in sudoers file then system will be crashed.
+
+########## Giving sudo previliges for user #######
+
+# Open sudoers file
+$ sudo visudo
+
+# Add below line to give sudo permission for particular user
+username ALL=(ALL:ALL) ALL
+
+Ex : ashok ALL=(ALL:ALL) ALL
+
+=> After making changes, to close sudoers file => ( CTRL + X + Y + Enter)
+
+========================================================
+How to enable password based authentication for user ?
+========================================================
+
+=> To enable password based authentication we need to deal with sshd_config file
+
+=> in sshd_config file, by default PassswordBasedAuthentication is no.
+
+=> To enable password based authentication we need to set the value as yes.
+
+# Display sshd_configurration file data
+$ sudo cat /etc/ssh/sshd_config
+
+# Open sshd_config file
+$ sudo vi /etc/ssh/sshd_config
+
+# restart sshd service
+# sudo systemctl restart sshd
+
+==============================================
+Connect with Linux VM using username and pwd
+==============================================
+
+Step-1) Connect to Linux VM as ec2-user using pem file
+
+Step-2) Create new user 'ram'
+
+        $ sudo useradd ram
+
+Step-3) Update password for 'ram'
+
+        $ sudo passwd ram
+
+Step-4) Configure 'ram' in sudoers file
+
+        $ sudo visudo
+
+Step-5) Enabled PwdBasedAuthentication in 'sshd_config' file
+
+        $ sudo vi /etc/ssh/sshd_config
+
+Step-6) Restart sshd service
+
+        $ sudo systemctl restart sshd
+
+Step-7) Use putty & Connect to linux vm as 'ram' user using username & pwd
+
+
+==================
+File Permissions
+==================
+
+=> In linux, file permissions are divided into 3 types.
+
+    r => read
+    w => write
+    x => execute
+
+=> Every file will have 3 sections in permissions
+
+      => user (owner)  (u)
+      => group  (g)
+      => other users (o)
+
+      rwxrwxrwx
+
+      => first 3 chars will represent user(owner) permissions
+
+      => middle 3 chars will represent group permissions
+
+      => last 3 chars will represent other users permissions
+
+
+    1)  rw-rwxrw-  f1.txt
+      		
+      		=> rw- : user having read + write 
+      		=> rwx : group having read+write+execute
+      		=> rw- : others having read + write
+
+    2)  r-xr--r--  f2.txt
+
+    		=> r-x : user having read + execute
+    		=> r-- : group having only read
+    		=> r-- : others having only read
+
+    3)  -w-r-xrwx  f3.txt
+
+    		=> -w- : user having only write
+    		=> r-x : group having read + execute
+    		=> rwx : others having read + write + execute
+
+
+=> To change file permissions in linux, we will use 'chmod' command
+
+
+# Giving execute permission for user
+$ chmod u+x f1.txt
+
+# giving write permission for group
+$ chmod g+w f1.txt
+
+# Remove execute permission for others
+$ chmod o-x f1.txt
+
+# Remove all permissions for other users
+$ chmod o-rwx f1.txt
+
+====================================
+File Permissions in Numeric Format
+====================================
+
+0 => No permissions
+
+1 => Execute
+
+2 => Write
+
+3 => (2+1) => Write + Execute
+
+4 => Read
+
+5 => (4+1) => Read + Execute
+
+6 => (4+2) => Read + Write
+
+7 => (4 + 2 + 1) => Read + Write + Execute
+
+
+$ chmod 777 f1.txt
+
+$ chmod 111 f2.txt
+
+$ chmod 222 f2.txt
+
+$ chmod 456 f2.txt
+
+
+Q-1) What is default permissions for file in linux ?
+
+		644
+
+Q-2) what is default permissions for directory in linux ?
+
+		755
+
+==============
+chown command
+==============
+
+=> It is used to change file/directory ownership
+
+# changing owner
+$ sudo chown new-owner file/directory
+
+# changing owner-group
+$ sudo chown :newGroup file/directory
+
+# changing owner & owner-group
+$ sudo chown owner:group file/directory
+
+
+============================================
+Q) What is the diff between chmod & chown ?
+============================================
+
+chmod => To change file/directory permissions
+
+chown => To change owner/group
+
+
+==================================
+Working with zip files in linux
+=================================
+
+=> Zip is used for files archieve (compress)
+
+####  create zip file syntax : zip <zip-name>  <content>
+
+# create zip with all txt files
+$ zip ashokit *.txt
+
+# print content of zip file
+$ zip -sf ashokit.zip
+
+# Add new file to existing zip file
+$ zip -r ashokit.zip f4.txt
+
+# Delete file from existing zip file
+$ zip -d ashokit.zip f4.txt
+
+# create zip file with password
+$ zip -e ashokit *.txt
+
+# Extract zip file content
+$ unzip ashokit.zip
+
+======================
+Networking Commands
+======================
+
+ping : To check connectivity
+
+    $ ping 192.168.8.0
+
+    $ ping www.google.com
+
+wget : It is used to download files from internet   
+
+    $ wget <url>                 -- it will keep filename as original
+    $ wget <url1> <url2>         -- download multiple files.
+    $ wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.89/bin/apache-tomcat-9.0.89.zip
+
+    $ wget -o <newname> <url>    -- it will rename the filename  
+    $ wget -b <url>              -- to download as background
+
+curl : It is used to send http request to server & get the response
+
+    $ curl <url>
+
+    $ curl https://type.fit/api/quotes
+
+ifconfig: To get the IP address of the machine
+
+      $ ifconfig
+
+SSH (Secure Shell):
+==================
+=>ssh is used to securely connect to a remote machine over a network.
+Basic Syntax:
+          >ssh [user]@[hostname]
+Example:
+          >ssh user@example.com
+->This command connects you to the remote machine example.com as the user user.
+
+SCP (Secure Copy protocal):
+===================
+=>scp is used to securely copy files between local and remote machines.
+Basic Syntax:
+        >scp [source] [destination]
+Examples:
+Copy a file from local to remote:
+          >scp /path/to/local/file.txt user@example.com:/path/to/remote/directory/
+->This command copies file.txt from your local machine to the specified directory on the remote machine example.com.
+
+Copy a file from remote to local:
+         >scp user@example.com:/path/to/remote/file.txt /path/to/local/directory/
+->This command copies file.txt from the remote machine example.com to your local directory.
+
+
+FTP (File Transfer Protocol):
+================================
+ftp is used to transfer files between a local and a remote machine. It is less secure compared to sftp because it does not encrypt the data.
+Basic Syntax:
+        >ftp [hostname]
+Example:
+        >ftp example.com
+->This command connects you to the FTP server at example.com.
+->Once connected, you can use commands like get to download files and put to upload files.
+
+Example Commands:
+Download a file:
+get remote_file.txt
+Upload a file:
+put local_file.txt
+
+
+SFTP (Secure File Transfer Protocol):
+=====================================
+sftp is a secure version of ftp that uses SSH to encrypt the data transfer.
+Basic Syntax:
+        >sftp [user]@[hostname]
+Example:
+        >sftp user@example.com
+->This command connects you to the SFTP server at example.com as the user user.
+
+Example Commands:
+Download a file:
+get /path/to/remote/file.txt /path/to/local/directory/
+Upload a file:
+put /path/to/local/file.txt /path/to/remote/directory/
+
+
+nohup (No Hang Up):
+====================
+nohup is used to run a command or script in the background even after you log out from the session.
+Basic Syntax:
+            >nohup [command] &
+Example:
+            >nohup python myscript.py &
+->This command runs myscript.py in the background and ensures it continues running even if you log out.
+
+
+netstat (Network Statistics):
+=============================
+netstat is used to display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.
+Basic Syntax:
+          >netstat [options]
+ 
+Proto  Recv-Q  Send-Q Local Address           Foreign Address          State
+tcp        0      0    localhost:domain        *:*                     LISTEN
+tcp        0      0    localhost:ipp           *:*                     time_wait
+udp        0      0    localhost:domain        *:*                     established
+
+options:
+netstat -a   --- Display all active connections
+netstat -i   --- Display network interface statistics
+netstat -r   --- Display routing table:
+netstat -s   --- Display Network Statistics
+netstat -l   --- Display Listening Ports
+netstat -c   --- Continuously displays network connections, updating every second. This is useful for real-time monitoring of network activity.
+
+=>Using netstat in real-time helps monitor network performance, troubleshoot issues, enhance security, manage resources, and ensure compliance.
+
+
+
+vmstat (Virtual Memory Statistics):
+=====================================
+vmstat provides information about system processes, memory, paging, block IO, traps, and CPU activity.
+Basic Syntax:
+      >vmstat [options] [delay [count]]
+Example:
+      >vmstat 2 5
+->This command will display system statistics every 2 seconds, for a total of 5 times.
+Sample Output:
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 1  0      0  123456  7890  12345    0    0     1     2    3    4  5  6  7  8  9
+ 0  0      0  123456  7890  12345    0    0     1     2    3    4  5  6  7  8  9
+
+
+traceroute:
+===========
+traceroute is used to trace the path that packets take from your computer to a destination host on a network.
+Basic Syntax:
+      >traceroute [hostname or IP address]
+Example:
+      >traceroute example.com
+->This command will show the route packets take to reach example.com.
+Sample Output:
+traceroute to example.com (93.184.216.34), 30 hops max, 60 byte packets
+ 1  192.168.1.1 (192.168.1.1)  1.123 ms  1.456 ms  1.789 ms
+ 2  10.0.0.1 (10.0.0.1)  2.123 ms  2.456 ms  2.789 ms
+ 3  93.184.216.34 (93.184.216.34)  3.123 ms  3.456 ms  3.789 ms
+
+=> This is useful for troubleshooting connectivity problems.
+
+
+
+
+
+
+
+
+
+====================================================
+
+free -h: to display memroy level details
+
+top : to display running processes
+
+htop : to display running processes in table format
+
+# install htop command
+$ sudo yum install htop
+
+
+==========================
+Working with Link Files
+===========================
+
+=> In linux we can create link files ( similar to shorcut files in windows )
+
+=> We can create link files in 2 ways
+
+  1) hard link
+
+  2) soft link
+
+--------------------------------
+Syntax To create Hard Link
+--------------------------------
+
+$ ln <original-file> <link-file>
+
+
+$ touch m1.txt
+
+$ ln m1.txt f1.txt
+
+Note: If we write some data to m1.txt that data will reflect in f1.txt file also
+
+Note: If we delete m1.txt file there is no effect on f1.txt
+
+Note: If we delete original file there is no effect on hard link file
+
+------------------------------
+Syntax To create Soft Link 
+------------------------------
+
+$ ln -s <original-file> <soft-link-file>
+
+Note: When we remove original file then soft link file will become dangling file. We can't access that file.
+
+=========================================================
+Q) what is the diff between find and locate commands ?
+=========================================================
+
+=> find and locate commands are used for file location search
+
+=> locate command will search for files in locate db.
+
+=> find command will search for files in entire linux file system based on given path
+
+
+# search for the files which are having name as f1.txt
+$ sudo find /home -name f1.txt
+
+# search for all empty files inside /home
+$ sudo find /home -type f -empty
+
+# search for all not empty files inside /home
+$ sudo find /home -type f -not -empty
+
+# search for all empty directories inside /home
+$ sudo find /home -type d -empty
+
+# print 30 days old files in linux
+$ sudo find . -mtime -30 -print
+
+# delete 30 days old files in linux
+$ sudo find /home -mtime 30 -delete
+
+# print before 7 days modified files.
+$ find . -mtime +7
+
+# print last 7 days modified files.
+$ find . -mtime -7
+
+# Find Files Modified Exactly 7 Days Ago
+$ find . -mtime 7
+
+# find the files based on permission
+$ find . -perm 777
+
+# find the files based on owner
+$ find . -user root -type f
+
+# find the files based on size
+$ find . -size +5M                 ---> 5c,5k,5M,5G
+
+# Write a command to locate all the files in the root directory, modified before a month.
+$ find / -type f -mtime +30
+
+# Write a command to locate all the files with permissions 644 in the current directory.
+$ find . -type f -perm 644
+
+# Write a command to locate and list all the contents of directories with the name ‘exercise’ in the root directory.
+$ find / -type d -name 'exercise' -exec ls -l {} \;
+
+# Find and interactively delete all files with a size greater than 2048 bytes (2 KB).
+$ find /path/to/directory -type f -size +2048c -exec rm -i {} \;
+
+
+
+
+
+
+
+========================
+package managers linux
+=========================
+
+=> Package Managers are used to install / update / remove / manage software packages in linux machines.
+
+  Ex : java, python, webservers, mysql ....
+
+=> Package managers are specific to linux distribution.
+
+     Amazon linux / Red Hat / Cent OS => YUM
+
+     Ubuntu / Debian => APT
+
+# install git in amazon linux vm
+$ sudo yum install git
+
+# install git in ubuntu linux vm
+$ sudo apt install git
+
+# install maven in amazon linux
+$ sudo yum install maven
+
+Note: Maven developed using java so when we install maven s/w then java s/w will be installed by default.
+
+# install java in amazon linux
+$ sudo yum install java
+
+==============================
+Install MySQL in Amazon linux
+==============================
+
+# execute below commands to install client & server
+
+sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm 
+sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+sudo dnf install mysql-community-client -y
+sudo dnf install mysql-community-server -y
+
+# edit my.cnf file 
+$ sudo vi /etc/my.cnf
+
+# add below line
+skip-grant-tables
+
+# After modifying the file save and restart mysql again by running
+$ sudo systemctl restart mysqld
+
+# check connectivity using below command
+$ mysql
+
+======================================
+Installing Web Server in Linux VM
+======================================
+
+=> Webserver is a software which is used to run websites
+
+=> We can use 'httpd' as a webserver in amazon linux machines
+
+# install httpd webserver
+$ sudo yum install httpd
+
+# start httpd server
+$ sudo service httpd start
+
+Note: Httpd webserver runs on http protocol with 80 port number.
+
+Note: To access our webserver, we need to enable http protocol in ec2 vm security group inbound rules.
+
+=> We can access our webserver using ec2-vm public ip.
+
+# Navigate to website content directory
+$ cd /var/www/html
+
+# create index.html file with website content
+$ sudo vi index.html
+
+Note: To stop our webserver we can use below command
+$ sudo service httpd stop
+
+
+=============================
+What is systemctl in linux ?
+=============================
+
+=> systemctl is a command-line utility in Linux systems. It is used to manage system services.
+
+=> some common tasks we can perform using systemctl
+
+=> Starting service
+=> stopping service
+=> restarting  service
+=> reloading service
+=> enabling / disabling services
+
+====================================================
+Here are some examples of how you can use systemctl
+====================================================
+
+# start a service
+$ systemctl start service-name
+
+Ex: systemctl start httpd
+
+# stop the service
+$ systemctl stop service-name
+
+# re-start the service
+$ systemctl restart service-name
+
+# re-load service
+$ systemctl reload service-name
+
+# enable service
+$ systemctl enable service-name
+
+# disable service
+$ systemctl disable service-name
+
+# check the status of a service
+$ systemctl status service-name
+
+
+====================================
+How to change hostname in linux vm ?
+======================================
+
+# set hostname
+$ sudo hostname <new-name>
+
+# re-start session 
+$ exit 
+
+Note: Connect with machine again using ssh command.
+
+========================================================================
+Q) How to copy files from one linux machine to another linux machine ?
+========================================================================
+
+====================
+Linux Architecture
+====================
+
+1) Shell
+2) Kernel
+3) Hardware components : drivers, printers, disc....
+
+
+=> Kernel is the core component is linux os. Kernel is responsible to communicate with Hardware components.
+
+=> Kernel will act as mediator between shell and linux hardware components.
+
+=> Shell is a mediator between users and kernel. Our commands will be processed by shell only.
+
+=====================
+What is Scripting ?
+=====================
+
+=> Scripting means set of commands we are keeping in a file for execution.
+
+=> Scripting is used to automate our daily routine work.
+
+=> For example, i want to execute below commands on daily basis
+
+whoami
+pwd
+date
+cal
+ls
+
+Note: instead of executing these commands one after other manually we can keep them inside a file and we can execute that file which is called as Scripting.
+
+=> The process of executing script file using shell is called as Shell Scripting.
+
+=> Shell scripting is used to automate our daily routine work in the project.
+
+Note: Shell script files we will create using .sh extension.
+
+============================
+what is sha-bang in linux ?
+============================
+
+=> sha-bang is used to specify which shell we should use to process our script file.
+
+syntax:    #! /bin/bash
+
+Note: Writing sha-bang is not mandatory but recommended.
+
+================= 01 - Shell Script ================
+
+#! /bin/bash
+
+echo "Enter Your Name"
+
+read uname
+
+echo "Hey $uname, welcome to anil world"
+
+==================02 - Shell Script ===============
+
+#! /bin/bash
+
+echo  "Enter your firstname"
+
+read fname
+
+echo "Enter your lastname"
+
+read lname
+
+echo "Your Fullname : $fname $lname"
+
+
+variable substitution:
+======================
+=>Accessing the value of variable by using $ symbol is called vs.
+syn:
+$variablename
+${variablename}
+
+ex:
+a=10
+b=20
+echo "the values of a and b are: $a and $b"
+
+variable access:
+
+$var
+"$var"
+'$var'  --not valid
+var     -- not valid
+
+
+
+===========
+Variables
+===========
+
+=> Variables are used to store the values
+=> Variables will represent data in key-value format
+
+        a=10
+        b=20
+        name=ashokit
+        age=30
+
+Note: We don't have data types in shell scripting.
+
+Variables Rules
+================
+=> Variable names shouldn't start with digits
+=> Variable names shouldn't contains special symbols
+
+    Ex: - , @, #
+
+Note: It is recommended to use UPPERCASE characters for variable names
+
+              name ===> NAME
+
+types:
+------
+=> We have 2 types of variables
+  
+        1) System Variables / Environment Variable
+        2) User Defined Variables
+
+1) System Variables / Environment Variable:
+----------------------------------------------
+=> The variables which are already defined and using by our system are called as System variables.
+
+        $ echo $SHELL  --> It Displays the shell being used.
+
+        $ echo $USER   --> current usr name.
+
+        $ echo $PATH   -->	
+
+Note: We can access all the environmental variables using below command
+
+        $ env
+
+2) User Defined Variables:
+---------------------------
+=> The variables which we are creating for our requirement are called as 'User Defined Variables'.
+            name=ashok
+            id=101
+            age=25
+            gender=male
+
+Note : To access the value of a variable, it should be preceded with ‘$’ sign. 
+           >variable_name=10
+            >echo $VARIABLE_NAME
+
+# create variable using terminal
+$ export course=devops
+
+# get variable value
+$ echo $course
+
+=>To prevent accidental or unintended modification, create a read only variable. This ensures its value remains constant after initialization.
+   $ readonly val = unix
+
+# unset variable           
+$ unset variable_name
+
+Note: If we use export command in terminal for setting variables then those variables will be removed once we close our terminal. These are called temporary variables.
+
+
+Special Variables:
+--------------------
+->In Unix, there are special variables that are reserved for specific functions. Each of them hold a special value in Unix.
+variables         Description
+   $?          exit status of previous command   0 & 1  0-true  1-false
+   $0          shell name or current file name
+   $#          total no.of positional aruguments
+   $*          display all positional aruguments  -->all positional parameters are treated as a single argument, 
+   $@          display all positional aruguments  -->each positional parameter is treated as a separate argument. 
+   $$          process id of current process
+
+
+
+Command line arguments:
+------------------------
+->A powerful and straightforward approach to providing input to Unix shell scripts is through command-line arguments.
+    >sh testscript.sh admin 234 file1
+    >$ sh testscript.sh "db admin" 234 file1
+->The command line arguments passed are ‘admin’, ‘234’, and ‘file1’.
+	
+
+positional Parameters:
+-----------------------
+->The command line arguments passed to a script are numbered from ‘1’ based on their position. They can be accessed inside the script by using their position.
+->These arguments can be accessed by $1, $2 and $3 respectively based on their position. 
+->To access arguments beyond the 9th position, the positional parameter must be protected with flower braces like ${10}, ${11}, ${12}, etc. 
+
+ex:
+    vi f1.sh
+
+echo "name of the script file is $0"
+echo "total no.of aruguments are $#"
+echo "first arugument is $1"
+echo "the aruguments are $@"
+echo "the aruguments are $*"
+
+
+===================================
+How to set variables permanently ?
+====================================
+
+=> We will use .bashrc file to set variables permanently for the user.
+
+=> In user home directory, .bashrc file will be available.
+
+        $ cat .bashrc
+
+# open .bashrc file
+$ vi .bashrc
+
+# add variables at end of the file
+course=devops
+trainer=ashok
+
+# apply .bashrc changes
+$ source .bashrc
+
+# Access variables
+$ echo $course
+$ echo $trainer
+
+Note: In linux machine, every user will contain their own .bashrc file.
+
+
+
+How to set variables for all users in linux ?
+=================================================
+
+$ cat /etc/profile
+
+Note: If we add variables in /etc/profile then those variables applicable for all users in linux vm.
+
+
+
+Reading dynamic data from the user:
+=================================
+=>By using read kw we can read dynamic data from the end user.
+
+without prompt message:
+----------------------
+$ read a b
+ 10 20
+echo :the values of a and b are $a and $b"  --> 10 20
+
+
+with promt message:
+-------------------
+approach-1:
+-----------
+#! /bin/bash
+echo "enter a number:"
+read a
+
+echo "enter a number:"
+read b
+
+echo "a value is $a"
+echo "b value is $b"
+
+approach-2:
+-------------
+echo -n "enter a number:"
+read a
+
+or
+
+read -p "enter a number:" userName
+read -p "enter a password:" password   (or)  read -s -p "enter a password:" password
+echo
+echo "thanks for providing your information"
+echo "your user name: $userName"
+echo "your password: $password"	
+
+-p ====>just to display prompt message
+-s ====>it hides on screen which id provided by end user
+
+
+
+
+
+
+
+
+===========
+Operators
+===========
+
+=> Operators are used to perform some operation on variables.
+
+Ex:
+
+a=10
+b=20
+
+a+b
+a>b
+a==b
+
+========================
+Arithematic Operations
+========================
+
+Addition : $((a+b))
+
+Multiplication : $((a * b))
+
+Substraction : $((a - b))
+
+Division : $((a / b))
+
+Modulas : $((a % b))
+
+
+==================03 - Shell Script ===============
+
+#! /bin/bash
+
+echo "Enter first number"
+
+read FNUM
+
+echo "Enter second number"
+
+read SNUM
+
+echo "Result : $((FNUM+SNUM))"
+
+=======================
+Comparision Operators
+=======================
+
+Equality (-eq): Checks if two numbers are equal.
+Inequality (-ne): Checks if two numbers are not equal. 
+Equality (=): Checks if two strings are equal.
+Inequality (!=): Checks if two strings are not equal.
+Less Than ( -lt )
+Greater than (-gt)
+Greater than or equal to (-ge)
+Less than (-le) 
+
+
+Shell Operators in Unix:
+==========================
+=>The shell operators && and || are not only used to combine the tests but are also used to combine commands.
+Syntax:
+command1 && command2
+command1 || command2
+->In the first syntax, command2 gets executed only when command1 is executed successfully. In the second syntax, command2 gets executed only when command1 is not executed successfully.
+ex:
+   >date && cal
+   >date || cal
+
+Exercise:
+Write a single-line logic to remove the temp.txt file if it exists, and its size is greater than zero. Else ‘file not found’ error message must be printed.
+sol: [ -s user.log ] && rm user.log || echo "log file not found"
+   
+
+========================
+Conditional Statements
+========================
+
+=> Conditional statements are used to execute commands based on condition.
+
+Syntax : 
+
+if [ condition-1 ]; then   
+   // stmt-1
+
+elif [ condition-2 ]; then   
+   // stmt-2  
+
+else
+  // stmt-3
+fi
+
+3. if..elif..else statement:
+----------------------------
+Syntax:
+
+           if [ test expression 1 ]
+
+             then
+
+                block of commands
+
+           elif [ test expression 2 ]
+
+             then
+
+                block of commands
+
+           else
+
+                block of commands
+
+           fi 
+
+
+case statement:
+----------------
+“case” statement is used when you need to make a choice based on different values. 
+Syntax:
+
+case <val> in
+
+choice1) <block of commands>;;
+
+choice2) <bloc of commands>;;
+
+*) <block of commands>;;
+
+esac
+
+
+
+ex:
+echo “Enter any number”
+read num
+case $num in
+0) echo "The num is zero";;
+10) echo "The num is ten";;
+100) echo "The num is hundred";;
+*) echo "No match is found"
+esac
+
+string:
+-----
+ex:
+#!/bin/bash
+day="Monday"
+case $day in
+    "Monday")
+        echo "Start of the work week!"
+        ;;
+    "Friday")
+        echo "End of the work week!"
+        ;;
+    *)
+        echo "Midweek days."
+        ;;
+esac
+
+
+==================04 - Shell Script ===============
+
+Requirement : Read two numbers and check weather those numbers are equal or not.
+
+
+#! /bin/bash
+
+echo "Enter First Num"
+read N1
+
+echo "Enter Second Num"
+read N2
+
+if [ $N1 -eq $N2 ]; then
+  echo "Both are equal"
+else
+  echo "Both are not equal"
+fi
+
+==================05 - Shell Script ===============
+
+Requirement : Read user age and determine weather user is eligible for vote or not.
+
+#! /bin/bash
+
+echo "Enter Your Age"
+read AGE
+
+if [ $AGE -gt 18 ]; then
+ echo "Eligible For Vote"
+else
+ echo "Not Eligible for vote"
+fi
+
+==================06 - Shell Script ===============
+
+Requirement : Read a number and check type of number (Positive or Negative or Zero)
+
+#! /bin/bash
+
+echo "Enter Number"
+read N1
+
+if [ $N1 -gt 0 ]; then
+ echo "Positive Num"
+elif [ $N1 -lt 0 ]; then
+ echo "Negative Num" 
+else
+ echo "It is zero" 
+fi
+
+====================
+Looping Statements
+==================== 
+
+=> Loops are used to execute statements multiple times.
+
+=> We can use 2 types of Loops
+
+      1) Range Based Loop (ex: for)
+
+      2) Conditional Based Loops (ex: while)
+
+=================
+For loop Syntax
+=================
+
+for(( intialization ; condition ; modification ))
+
+do 
+   // stmts
+
+done      
+
+
+================================================
+For loop example - Print Numbers from 1 to 10
+===============================================
+
+#! /bin/bash
+
+for((i=1; i<=10; i++))
+do
+echo "$i"
+done
+
+================================================
+For loop example - Print Numbers from 10 to 1
+================================================
+
+#! /bin/bash
+
+for((i=10; i>=1; i--))
+do
+echo "$i"
+done
+
+==============
+while loop
+==============
+
+=> While loop is used to execute statements until condition is true
+
+==============================
+Print Numbers from 1 to 10 
+==============================
+
+#! /bin/bash
+
+N=1
+
+while [ $N -le 10 ]
+do
+echo "$N"
+
+let N++
+
+done
+
+==============================
+Print Numbers from 10 to 1
+==============================
+
+#! /bin/bash
+
+N=10
+
+while [ $N -ge 1 ]
+do
+echo "$N"
+
+let N--
+
+done
+
+=============
+Functions
+=============
+
+=> Functions are used to perform some action / task
+
+=> Using functions we can divide big task into multiple small tasks.
+
+=> Functions are used to divide our work logically
+
+=> Functions are re-usable.
+
+---------
+syntax
+---------
+
+# creating function
+function funcName ( ) {
+  
+    // function body
+}
+
+# call function
+funcName
+
+====================== Script with Function ===============
+
+#! /bin/bash
+
+function welcome(){
+    echo "Welcome to ashok it"
+    echo "welcome to linux"
+    echo "welcome to devops"
+}
+
+welcome
+
+======================================================================================
+Q) Write a function which will read filename from user and print content of that file.
+======================================================================================
+
+#! /bin/bash
+
+# creating function
+function readFile(){
+  echo "Enter filename"
+  read FNAME
+
+  echo "*********printing file data - start ************"
+  cat $FNAME
+  echo "*********printing file data - end *************"
+}
+
+#calling above function
+readFile
+
+======================================================================================
+Q) Write a function which will read filename from user and print content of that file.
+======================================================================================
+
+#! /bin/bash
+
+# creating function
+function readFile(){
+  echo "Enter filename"
+  read FNAME
+  
+  if [ -f "$FNAME" ];then
+
+  echo "*********printing file data - start ************"
+  cat $FNAME
+  echo "*********printing file data - end *************"
+
+
+ls
+
+  else
+   echo "********* - File Not Found - ************"
+
+  fi
+}
+
+#calling above function
+readFile
+
+
+=========================
+Command Line Arguments
+=========================
+
+script file : task.sh
+
+execution : sh task.sh
+
+=> cmd args are used to supply values to script file at the time of execution.
+
+    $ sh task.sh 10 20 ashok it 20 30
+
+=> cmd args are we can access in script file like below...
+
+$# => Total no.of args passed
+
+$0 => Get script file name
+
+$1 => Read First cmd arg    
+
+$2 => Read second cmd arg
+
+$* => Read all cmd args
+
+============================
+
+#! /bin/bash
+
+echo "Total Args : $#"
+
+echo "Script file name : $0"
+
+echo "First cmd Arg : $1"
+
+echo "Second cmd Arg : $2"
+
+echo "==========="
+
+echo "All cmd args : $*"
+
+============================
+
+================================================================
+Q) Write shell script to perform sum of 2 numbers using cmd args
+=================================================================
+
+#! /bin/bash
+
+result=$(($1+$2))
+
+echo "sum is : $result"
+
+
+============================================
+Q) Write shell script to print system info
+============================================
+
+# print host name
+echo "Host Name : $(hostname)"
+
+# print current date & time
+echo "Date & Time : $(date)"
+
+# print system uptime
+echo "System Uptime : $(uptime)"
+
+# print disc usage
+echo "Disc usage" 
+df -h
+
+# print memory usage
+echo "Memoy usage"
+free -h
+
+======================================================================================
+Q) Write shell script for log analysis. Identify how many ERRORS avalable in log file
+======================================================================================
+
+#! /bin/bash
+
+logfile="/var/log/dnf.log"
+
+#count error msg occurance
+errCount=$(grep -c "ERROR" "$logfile")
+
+echo "Number of errors : $errCount"
+
+
+=========================================================================
+Q) Write shell script to create ec2-user home directory files backup
+=========================================================================
+
+#! /bin/bash
+
+backup_dir="/home/ubuntu"
+source_dir="/home/ubuntu"
+
+tar -czvf "$backup_dir/backup_$(date +%Y%m%d).tar.gz" "$source_dir"
+
+------------------------------------------------
+#create a source and backup folder
+SOURCE_DIR="/root"
+BACKUP_DIR="/root"
+
+# Create a timestamp
+TIMESTAMP=$(date +"%Y%m%d%H%M%S")
+
+# Create a backup file name with the timestamp
+BACKUP_FILE="$BACKUP_DIR/backup_$TIMESTAMP.tar.gz"
+
+# Create the backup
+tar -cvf $BACKUP_FILE $SOURCE_DIR
+
+# Print a message indicating the backup was successful
+echo "Backup of $SOURCE_DIR completed successfully. Backup file: $BACKUP_FILE"
+
+
+===========================
+Shell Scripts for practice
+===========================
+
+1) Write shell script to check given number is even or odd
+
+2) Write shell script to check given number is prime number or not
+
+3) Write shell script to check given string is palindrome or not
+
+4) Write shell script to print table of given number like below
+
+          2 * 1 = 2
+          2 * 2 = 4
+          ...
+          2 * 10 = 20
+
+
+=====================
+What is Scheduling ?
+=====================
+
+=> Scheduling means configuring the tasks to be executed automatically.
+
+    Ex: Setting alarm @6:00 AM in phone
+
+=> Similar to alarm trigger, i want to schedule my script file execution. 
+
+=> In linux, we will use CRON to schedule jobs/scripts execution.  
+
+=> CRON is an utility in linux to schedule jobs execution. 
+
+=> In real-time we will use several jobs on daily/weekly/monthly/yearly basis to automate our work.
+
+      - Delete temp files
+      - Take backup of files
+      - System health checks
+
+=========
+usecase
+=========
+
+=> Execute shell script for every 5 minutes.
+
+Note: Instead of human executing script for every 5 minutes, we can automate script execution using CRON job.
+
+================
+CRON Job syntax
+================
+
+Syntax :   * * * * * <script-file>
+
+=> First * will represent minutes ( 0 - 59 )
+
+=> Second * will represent hour ( 0 - 23 ) u
+
+=> Third * will represent day of month ( 1 - 31 )
+
+=> Fourth * will represent month of year ( 1 - 12 )
+
+=> Fifth * will represent day of week (0 - 6 / sun-mon)
+
+======================
+Sample CRON Schedules
+======================
+
+Run for every minute => * * * * * <script-file-name>
+
+Run for every 15 mins => */15 * * * * <script-file-name>
+
+Run every day @5:00 AM => 0 5 * * * <script-file-name>
+
+Run every day @8:00 PM => 0 20 * * * <script-file-name>
+
+Run every month first day @9:00 AM => 0 9 1 * * <script-file-name>
+
+# 20th May - 9 am
+0 9 20 5 * <file-name>
+
+# Dec 31st @11:55 PM 
+55 23 31 12 * <script-file-name>
+
+### Cron Expression Generator : https://crontab.guru/
+
+==================
+What is CROND ?
+==================
+
+=> In linux machines, CROND is a deamon process (background process).
+
+=> Every minute, CROND will be checking for CRON Jobs Schedule for the execution.
+
+========================
+what is crontab file ?
+========================
+
+=> Crontab file is used to configure cronjobs for execution.
+
+# open crontab file
+$ crontab -e
+
+# Display cronjob schedules
+$ crontab -l
+
+# remove crontab file
+$ crontab -r
+
+====================
+CRONJOB Practicals
+====================
+
+1) Launch Linux machine with UBUNTU AMI
+
+2) Connect with Ubuntu VM using MobaXterm / Putty / GitBash
+
+3) Create shell script file and keep below content
+
+    $ vi task.sh
+
+touch /home/ubuntu/f1.txt
+touch /home/ubuntu/f2.txt
+
+4) Provide execute permission for script file
+
+    $ chmod +x task.sh
+
+5) Open crontab file and configure job schedule
+
+    $ crontab -e    
+
+Note: Add below job schedule info
+
+  */1 * * * * /bin/bash /home/ubuntu/task.sh  
+
+6) Save and close the crontab file (ctrl + x + y + enter)
+
+7) After 1 minute check files got created or not.
+
+        $ ls -l
+
+=========================================================      
+
+=============================
+Linux Commands we practiced
+=============================
+
+1) whoami
+2) date
+3) cal
+4) pwd
+5) cd
+6) ls
+7) touch
+8) rm
+9) mv
+10) cat
+11) tac
+12) rev
+13) cp
+14) diff
+15) cmp
+16) wc
+17) history
+18) head
+19) tail
+20) grep
+21) vi
+22) sed
+23) awk
+
+24) useradd
+25) passwd
+26) id
+27) userdel
+28) usermod
+29) groupadd
+30) groupdel
+
+31) chmod
+32) chown
+
+33) ping
+34) wget
+35) curl
+36) ifconfig
+
+37) zip
+38) unzip
+
+39) free
+40) top
+41) htop
+
+42) ln
+
+43) yum
+
+44) systemctl
+
+==========================
+Shell Scripting - Summary
+==========================
+
+1) What is Shell
+2) What is Kernel
+3) What is Scripting
+4) Shell Scripting
+5) Why shell scripting
+6) What is Sha-bang 
+7) Variables
+8) System Variables vs user-defined variables
+9) what is .bashrc ?
+10) Commandline arguments
+11) Operators
+12) Conditional Stmts (if-elif-else-fi)
+13) Looping stmts (for, while)
+14) Functions
+15) Scripts for practice
+16) Printing system info using script
+17) Taking files backup using script
+18) CRON Jobs
+
+
+=============
+Linux FAQ's
+=============
+
+1) What is Kernel
+2) What is Shell
+3) How do you find files in linux
+4) What is the purpose of grep command
+5) explain chmod command
+6) how to create link files
+7) how to check system resource usage in linux
+8) Explain the role of /etc/passwd file
+9) How to check network connectivity in linux
+10) how to deal with services in linux
+11) What is CRON in linux
+12) How to manage packages in linux
+13) How to create backup in linux
+14) Explain about ssh command
+15) How to monitor linux system performance
+16) How to kill process in linux 
+17) What is sudo in linux
+18) How to check IP addr of linux machine
+19) How to manage users and groups in linux
+20) How to check linux system information
+21) How to check running process in linux vm
+22) How to change file permissions in linux
+23) how to change file ownership
+24) How to search content in file
+25) how to check system execution time
+26) How to check listening ports in linux
+27) What is linux distribution
+28) What is vi in linux
+29) How to delete 2 months old files in linux
+30) Which linux distribution used in your project ?  (RHEL)
+31) grep vs awk vs sed
