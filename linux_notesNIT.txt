@@ -592,14 +592,14 @@ ex: 2 apple
     1 banana
     3 cherry
 
-2.Printing the Repeated Lines for One Time 
+2.only print duplicate lines, one for each group 
 $ uniq -d mv.txt
 
 3.Printing All the Duplicate Lines 
 $ uniq -D mv.txt
 
-4.Printing Only the Unique Lines that are not repeated.
-$ uniq -u mv.txt
+4.Printing Only the Unique Lines 
+	$ uniq -u mv.txt
 
 5. Case-insensitive Comparison
 $ uniq -i mv2.txt
@@ -772,7 +772,7 @@ Example Output
  10:58:42 up 5 days,  3:42,  2 users,  load average: 0.15, 0.10, 0.0
 
 last reboot:
-============
+============	
 =>This command will display a list of all the reboots since the log file was created.
 Example Output
 reboot   system boot  5.4.0-104-generic Mon Mar 13 10:00   still running
@@ -810,7 +810,7 @@ Function: It creates a .tar file that contains multiple files and directories.
 Usage: Commonly used to bundle files together. For example, tar -cvf archive.tar directory/ will create an archive file archive.tar containing the contents of directory/.
 find /Desktop/Document/Application/ -type d -exec tar -cvzf {}.tar {} \;
 
-History:
+History:	
 =========
 =>used to display the list of previously executed commands in the terminal.
 
@@ -886,8 +886,6 @@ vi : open the file
 
 
 
-09501795017
-02900127578  -dishtv
 
 
 
@@ -908,8 +906,7 @@ SED command
 java is a programming language
 java is free
 java is open source
-java is easy
-i want to learn java
+java is easy, i want to learn java
 java is having good demand in market
 java is oop based. java is easy.
 
@@ -928,7 +925,7 @@ $ sed 's/java/python/2' data.txt
 $ sed 's/java/python/3' data.txt
 
 # Replace all occurances of 'java' with 'python' in every line
-$ sed 's/java/python/gi' data.txt                                  -- case insensitive
+$ sed 's/java/python/gi' data.txt                                 i -- case insensitive
 
 # Replace all occurrences of a word in a specific line 
 $ sed ‘1s/Bash/Shell/g’ file0.txt
@@ -952,7 +949,7 @@ $ sed 's/^MR //i' filename  -- case-insensitive
 ---------------------------------
 #To delete a specific word from a file
 $ sed 's/<word>//g' file_name
-$ sed 's/java//;s/ //' ak
+$ sed 's/java//;s/ //' fn
 
 # Delete a Specific Line of the File
 $ sed -i '4d' f1.txt
@@ -976,7 +973,7 @@ $ sed '/python is a/,/source/d' f1
 3. Displaying Lines from a File:
 -------------------------------
 # Display Only Specific Lines of the File:
-$ sed -n '3p;5p;7p' file.txt
+$ sed -n '3p;5p;7p' file.txt                     -n ---suppress automatic printing
 
 # print all lines which contains 'python' keyword
 $ sed -n '/python/p' data.txt
@@ -994,6 +991,9 @@ $ sed '4i\i am from ashokit' data.txt
 
 # Add given text at end of the file
 $ sed '$a\i love linux' data.txt
+
+#  Replace a line
+$ sed '3c\This is the new line' file.txt
 
 # add an empty line after each line in a file 
 $ sed G filename
@@ -1049,17 +1049,18 @@ $ awk '{print $1,$NF}' employees.txt   --nf will give the last column
 
 # print the fisrt line
 $ awk -F 'NR==1 {print $0}' filename   -F field separator
-
-# print the fisrt line
 $ awk -F 'NR==1 {print}' filename 
+$ awk -F 'NR==1' filename
 
-# print the multiple lines.
+ 
+# print the range of lines.
 $ awk -F 'NR==1,NR==3 {print}' filename 
 
+#printing specific lines.
+$ awk -F ',' 'NR==2;NR==4 {print}' filename
 
 # print the count of lines in a file.
 $ awk -F 'END {print NR}' filename  
-
 
 # print only manager role data rows 
 $ awk '/manager/ {print}' employees.txt      -- it will print all manager rows 
@@ -1077,11 +1078,6 @@ $ awk '$2 ~ /e/' employees.txt
 # print first column data along with line number by appending @
 $ awk '{print NR "@" $1 }' employees.txt
 
-#printing range of lines.
-$ awk -F ',' 'NR==2,NR==4 {print}' filename
-
-#printing specific lines.
-$ awk -F ',' 'NR==2;NR==4 {print}' filename
 
 #printing range of lines with specific column with line numbers.
 $ awk -F ',' 'NR==2,NR==4 {print NR,$1}' filename
@@ -1131,14 +1127,25 @@ $ cat /etc/passwd
 # swith user
 $ sudo su <username>
 
+# To create a new user account name with an account expiration date
+$ useradd -e 2025-05-21 username
+
+# To remove the expiration and make the account permanent again
+$ usermod -e "" username
+
+# To check the account status, you can use:
+$ chage -l username
+
+
 # Go to logged in user home directory
 $ cd ~
 
-# Delete User
+# To Delete User
 $ sudo userdel <username>
 
-# Delete user along with user home directory
+# To Delete user along with user home directory
 $ sudo userdel <username> --remove
+$ sudo userdel -r username
 
 # how to change username
 $ sudo usermod -l <new-name> <old-name>
@@ -1349,6 +1356,8 @@ Q-2) what is default permissions for directory in linux ?
 ==============
 chown command
 ==============
+chown = changing owner
+chgrp = changing group
 
 => It is used to change file/directory ownership
 
@@ -1357,9 +1366,16 @@ $ sudo chown new-owner file/directory
 
 # changing owner-group
 $ sudo chown :newGroup file/directory
+$ sudo chgrp newgroup file/directory
 
 # changing owner & owner-group
 $ sudo chown owner:group file/directory
+
+# changing owner & owner-group to multiple files/directories
+$ sudo chown owner:group file/directory file/directory 
+
+# changing user& group of a folder along with files
+$ sudo chown -R user:group directory
 
 
 ============================================
@@ -2412,7 +2428,7 @@ syntax
 ---------
 
 # creating function
-function funcName ( ) {
+function funcName () {
   
     // function body
 }
@@ -2596,6 +2612,9 @@ tar -cvf $BACKUP_FILE $SOURCE_DIR
 
 # Print a message indicating the backup was successful
 echo "Backup of $SOURCE_DIR completed successfully. Backup file: $BACKUP_FILE"
+
+
+
 
 
 ===========================
