@@ -329,12 +329,16 @@ cat : create file with data + append data to file + print file data
 
 echo:
 =====
-->echo command in Unix/Linux is used to display a line of text on terminal.
+->echo command in Unix/Linux is used to display a line of text on terminal. and also used to create file.
 -n   : prevents the trailing newline.
 -e   : enables interpretation of backslash escapes.
        ex: echo -e "Hello,\nWorld!"
        op: Hello,
            World!
+
+To create file:
+---------------
+echo "content" > file
 
 =>To remove the content of the file but not the file:
   --------------------------------------------------	
