@@ -18,7 +18,6 @@ Day-01 : Linux
 ================
 pre-requisites
 ================
-
 1) Laptop/Desktop => 8 GB RAM
 2) AWS Cloud Account (Free Tier)
 
