@@ -1,0 +1,11 @@
+GIT:
+===
+=>is a version control system.
+=>Git is the tool used to track changes in your code
+=> it runs: On your local machine (command line or GUI tools).
+
+GITHUB:
+=======
+=>GitHub is a platform which is used to store all code at one place.
+=>GitHub helps with integration, especially in collaborative environments.
+=>it runs: On the web (github.com).
