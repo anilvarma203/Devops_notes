@@ -69,19 +69,16 @@ git commit --amend -m “message”          # To edit the lastest commit messag
 git commit --amend --author “name <mail>" # To edit author for latest commit 
 git commit --amend --no-edit             # To add staged files to commit the changes with prev commit 
 
-=======
-git commit -m "msg"                      # Commit staged files to local repo
-git commit -m "msg" filename             # commit specific file to local repo
 
 git push                                 # Push local commits to remote repo
 
-git restore <file>                       # Unstage
-git restore --staged <file>              # Discard changes      
+git restore <file>                       # Discard changes (files are in working tree)
+git restore --staged <file>              # Unstage         (files are in staging area)
 git rm --cached <file>                   # Stop tracking the file entirely
 
 
 git log:
-==========
+===========
 git log                                  # To get commit history
 git log -2                               # To get top 2 commit history
 git log --follow --all filename          # To get full commits of a single file (how many commits done on a single file)
