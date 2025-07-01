@@ -54,6 +54,18 @@ Git Architecture:
 ->To see the version of git
   >git --version
 
+Basic commands:
+------------------
+git init
+git add .
+git status
+git commit -m "msg"
+git push
+git pull
+git log
+git clone <url>
+
+
 Git Bash Commands:
 -------------------
 git init                                 # Initialize working tree
@@ -74,7 +86,7 @@ git push                                 # Push local commits to remote repo
 
 git restore <file>                       # Discard changes (files are in working tree)
 git restore --staged <file>              # Unstage         (files are in staging area)
-git rm --cached <file>                   # Stop tracking the file entirely
+git rm --cached <file>                   # To unstage and Stop tracking the file entirely
 
 
 git log:
@@ -92,12 +104,35 @@ git show commit-id --stat                # To get history of a commit in stat fo
 git show <commit-id> --name-only         # command to display only the files changed in a specific commit
 
 =======
-git log                                  # Show commit history
-git show <commit-id> --name-only         # command to display only the files changed in a specific commit
-git rm <file-name>                       # Remove a file
-git clone <repo-url>                     # Download remote repo to local
 git pull                                 # Get latest changes from remote repo
+
+->pull latest changes before you push.otherwise it will not allow u to push code to the remote repository.
+NOTE: when we use pull command there is a chance of getting conflicts.
+Conflict: If 2 developers modify same exact line(s) of data in a file then conflict occur. we need to resolved and we need to commit and push without conflicts.
+
+
+git clone <repo-url>                     # Download remote repo to local
+git rm <file-name>                       # Remove a file
 Note: After git rm, commit and push to delete file from remote repo.
+
+==========================
+what is .gitignore file ?
+==========================
+=>It is used to specify files and folder to skip from git operations. 
+ex:
+target/
+.project 
+.settings
+
+===============
+Git Branches:
+===============
+
+
+
+
+
+
 
 
 
