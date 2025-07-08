@@ -1,6 +1,6 @@
 GIT:(Global Information Tracker)
 ===
-=>is a version control system.
+=>is a version control system. used to communicate with GitHub repository
 =>Git is the tool used to track changes in your code
 =>It will maintain multiple versions of the same file
 =>It records every modification, addition, or deletion.
@@ -69,23 +69,24 @@ git clone <url>
 Git Bash Commands:
 -------------------
 git init                                 # Initialize working tree
-git status                               # Show working tree status
-git add <file-name>                      # Add file to staging area
+git add <file-name>                      # Add file to staging area (file is getting tracked)
 git add .                                # Add all files to staging area
+git status                               # Show working tree status(files are tracked or untracked)	
 
-git commit:
+git commit: 
 ------------
 git commit -m "msg"                      # Commit staged files to local repo
 git commit -m "msg" filename             # commit specific file to local repo
 git commit --amend -m “message”          # To edit the lastest commit message
 git commit --amend --author “name <mail>" # To edit author for latest commit 
 git commit --amend --no-edit             # To add staged files to commit the changes with prev commit 
-
+=>for every commit it will create a commit id.
 
 git push                                 # Push local commits to remote repo
 
 git restore <file>                       # Discard changes (files are in working tree)
-git restore --staged <file>              # Unstage         (files are in staging area)
+git restore <filename>                   # restore the file that was deleted (i.e.,committed or staged)
+git restore --staged <file>              # Unstage a file  (removes it from the staging area)
 git rm --cached <file>                   # To unstage and Stop tracking the file entirely
 
 
@@ -108,8 +109,9 @@ git pull                                 # Get latest changes from remote repo
 
 ->pull latest changes before you push.otherwise it will not allow u to push code to the remote repository.
 NOTE: when we use pull command there is a chance of getting conflicts.
-Conflict: If 2 developers modify same exact line(s) of data in a file then conflict occur. we need to resolved and we need to commit and push without conflicts.
 
+Conflict: If 2 developers modify same exact line(s) of data in a file then conflict occur. we need to resolved and we need to commit and push without conflicts.
+--------
 
 git clone <repo-url>                     # Download remote repo to local
 git rm <file-name>                       # Remove a file
@@ -204,7 +206,7 @@ Git Interview Concepts:
 Example:
 Merging changes from the develop branch to the main branch.
 
-=======================
+
 ✅ What is Git Stash?
 =======================
 =>Git Stash is used to save the current changes in a backup (stash) and make the working directory clean.
@@ -219,9 +221,11 @@ To work on JIRA-102, stash the JIRA-101 changes:
 After pushing JIRA-102 changes, get JIRA-101 changes back to working tree :
       >git stash apply
 
-======================================
+
 ✅ How to Remove Git Local Commits?
-======================================
+
+git reset:
+=========
 =>Use the git reset command to undo local commits.
 Types of Reset:
 
@@ -231,16 +235,16 @@ Types of Reset:
 2.Hard Reset: Removes both commit and file changes.
   >git reset --hard HEAD~1
 
-==========================================
 ✅ How to Revert git Central Repo Commits?
-============================================
+
+git revert:
+===========
 =>Use the git revert command to remove/undo changes from the central repository.
  ex: git revert <commit-id>
 
 Note: After git revert execution we need execute git push
        >git push
 
-==============================
 ✅ What is Git Cherry-pick?
 ==============================
 =>By default, git merge merges all commits from one branch to another.
@@ -248,7 +252,7 @@ Note: After git revert execution we need execute git push
 =>If you want to merge only a specific commit from one branch to anoter branch, use git cherry-pick.
    >git cherry-pick <commit-id>
 
-===========================
+
 ✅ Git Pull vs Git Fetch
 ==========================
 Command	Description,
@@ -259,7 +263,7 @@ To merge after fetch, run:
   >git merge
 git pull = git fetch + git merge
 
-======================
+
 ✅ What is Git Fork?
 ======================
 =>Git Fork is used to copy someone else's GitHub repository into your own GitHub account.
