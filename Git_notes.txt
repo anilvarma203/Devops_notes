@@ -103,7 +103,7 @@ git show commit-id                       # To get detailed information about a  
 git show commit-id --stat                # To get history of a commit in stat format 
 git show <commit-id> --name-only         # command to display only the files changed in a specific commit
 
-=======
+
 git pull                                 # Get latest changes from remote repo
 
 ->pull latest changes before you push.otherwise it will not allow u to push code to the remote repository.
@@ -114,6 +114,14 @@ Conflict: If 2 developers modify same exact line(s) of data in a file then confl
 git clone <repo-url>                     # Download remote repo to local
 git rm <file-name>                       # Remove a file
 Note: After git rm, commit and push to delete file from remote repo.
+
+
+Git GUI:
+========
+=>A desktop tool to perform Git operations.
+
+=>Run in working tree:
+   >git gui
 
 ==========================
 what is .gitignore file ?
@@ -127,7 +135,135 @@ target/
 ===============
 Git Branches:
 ===============
+Branch: A branch in GitHub (and Git in general) is a parallel version of a repository. It allows you to work on different features, bug fixes, or experiments without affecting the main codebase (usually the main or master branch).
+=>It isolate your work from main branch.
+=>when multiple teams working on same repo then project delivery will become difficult. To make project delivery process simple, we need to maintain multiple branches in git hub repo.
+Note: For every team one git branch is recommended.
 
+ex:
+Recommended Branches:
+main (default)
+develop (development team)
+sit (bug fixing team)
+research (R&D team)
+release (production team)
+
+Multiple teams can work in parallel using branches.
+=>Git commands related to branches:
+
+  Create a new branch                    # git branch new-branch-name
+  Switch to a branch                     # git checkout new-branch-name
+  Create and switch to a new branch      # git checkout -b new-branch-name
+  Push a branch to GitHub                # git push origin new-branch-name
+  List all branches                      # git branch
+  Delete a branch (locally)              # git branch -d branch-name
+  Download branch code from repo         # git clone -b branch-name <url>
+
+On GitHub (Web Interface):
+---------------------------
+1.Go to your repository.
+2.Click the branch dropdown near the top-left.
+3.Type a new branch name and press Enter to create it.
+4.You can also switch between branches here.
+
+=>Why Branches Are Important,
+Safe experimentation: Try new ideas without affecting the main code.
+Better collaboration: Each team member can work on their own branch.
+
+Lab Task:
+---------
+1.Go to GitHub and create develop branch from main.
+2.Clone the repo (main branch will be cloned by default):
+    >git clone <url>
+3.Switch to develop branch:
+    >git checkout develop
+4.Create a file and push it to develop branch.
+5.Create a Pull Request and merge develop into main.
+
+=>After branching, branch merge can do in 2 ways,
+1.By creating pull request(gui)
+2.By using git merge new_branchname(cli)
+
+git merge:
+----------
+=>It is used to merge all commits from one branch to another.
+Note: you should merge from main branch
+   >git merge new_bn
+
+✅ What is Git Cherry-pick?
+=>when we use 'git merge' command By default, all commits will merge from one branch to another branch.
+=>If you want to merge specific commit from one branch to another branch, then use git cherry-pick.
+ex: git cherry-pick <commit-id>
+
+
+Git Interview Concepts:
+========================
+✅ What is a Pull Request?
+=>A Pull Request is used to merge changes from one branch into another.
+
+Example:
+Merging changes from the develop branch to the main branch.
+
+=======================
+✅ What is Git Stash?
+=======================
+=>Git Stash is used to save the current changes in a backup (stash) and make the working directory clean.
+Example Scenario:
+JIRA-101 assigned at 9 AM → Work started, partial changes done.
+
+At 11 AM, JIRA-102 assigned → It's critical.
+
+To work on JIRA-102, stash the JIRA-101 changes:
+      >git stash
+
+After pushing JIRA-102 changes, get JIRA-101 changes back to working tree :
+      >git stash apply
+
+======================================
+✅ How to Remove Git Local Commits?
+======================================
+=>Use the git reset command to undo local commits.
+Types of Reset:
+
+1.Soft Reset: Removes commit but retains changes in the staging area.
+  >git reset --soft HEAD~1
+
+2.Hard Reset: Removes both commit and file changes.
+  >git reset --hard HEAD~1
+
+==========================================
+✅ How to Revert git Central Repo Commits?
+============================================
+=>Use the git revert command to remove/undo changes from the central repository.
+ ex: git revert <commit-id>
+
+Note: After git revert execution we need execute git push
+       >git push
+
+==============================
+✅ What is Git Cherry-pick?
+==============================
+=>By default, git merge merges all commits from one branch to another.
+
+=>If you want to merge only a specific commit from one branch to anoter branch, use git cherry-pick.
+   >git cherry-pick <commit-id>
+
+===========================
+✅ Git Pull vs Git Fetch
+==========================
+Command	Description,
+git pull	: Download latest changes from the central repo to working tree directly.
+git fetch	: Downloads changes from central to local repo only.
+note: To merge changes from local repo to working tree we can use 'git merge' command.
+To merge after fetch, run:
+  >git merge
+git pull = git fetch + git merge
+
+======================
+✅ What is Git Fork?
+======================
+=>Git Fork is used to copy someone else's GitHub repository into your own GitHub account.
+=>Useful for contributing to open-source projects.
 
 
 
